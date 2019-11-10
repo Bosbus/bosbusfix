@@ -65,6 +65,13 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 <body>
 <?php
 $this->load->view('part_frontend/header');
+?>
+
+  
+  
+
+  <!-- Page Content -->
+   <?php
       
       // $this->load->view('part_frontend/navigation');
       $this->load->view($main_view);
