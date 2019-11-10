@@ -5,9 +5,9 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 <script>
     var base_url = '<?php echo base_url();?>';
 </script>
- <!-- BEGIN SLIDER -->
+<!-- BEGIN SLIDER -->
     <div class="page-slider margin-bottom-40">
-        <div id="carousel-example-generic" class="carousel slide carousel-slider">
+        <div id="carousel-example-generic" class="carousel slide carousel-slider"  data-ride="carousel" data-interval="5000">
             <!-- Indicators -->
             <ol class="carousel-indicators carousel-indicators-frontend">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -81,30 +81,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
     <!-- END SLIDER -->
 <div class="main">
       <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <form action="#" class="content-search-view form-inline">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <select class="form-control" id="v_tujuan_combo" name="v_tujuan_combo">
-                            <option selected>Dari...</option>
-                            <option value="1">Jakarta</option>
-                            <option value="2">Depok</option>
-                            <option value="3">Bekasi</option>
-                        </select>   
-                        <input type="text" name="v_berangkat" class="form-control">
-                    </div>
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputPassword2" class="sr-only">Password</label>
-                        <input type="text" name="v_berangkat" class="form-control">
-                    </div>
-                    <span class="input-group-btn">
-                        <button type="submit" class="btn btn-primary mb-2">Search</button>
-                    </span>
-                </form>
-            </div>
-        </div>
-      
-         <!-- BEGIN SERVICE BOX -->   
+        <!-- BEGIN SERVICE BOX -->   
         <div class="row service-box margin-bottom-40">
           <div class="col-md-4 col-sm-4">
             <div class="service-box-heading">
@@ -140,6 +117,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
           </div>
         </div>
         <!-- END BLOCKQUOTE BLOCK -->
+
         <!-- BEGIN RECENT WORKS -->
         <div class="row recent-work margin-bottom-40">
           <div class="col-md-3">
