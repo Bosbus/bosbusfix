@@ -4,7 +4,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 /**
  *
  */
-class Main extends My_Controller
+class Main extends CI_Controller
 {
 
     public $data = array(
@@ -19,7 +19,7 @@ class Main extends My_Controller
         $this->load->model('general_model','general');
         $this->load->helper(array('role_form_helper','xss_helper'));
         $this->load->library('datatables');
-        $this->cekLoginAdmin();
+        // $this->cekLoginAdmin();
     }
 
     #+++++++++++++++++++++++++++++ CORE Content To Next Project ++++++++++++++++++++++++++#

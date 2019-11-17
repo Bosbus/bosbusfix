@@ -5,9 +5,9 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 <script>
     var base_url = '<?php echo base_url();?>';
 </script>
-<!-- BEGIN SLIDER -->
+ <!-- BEGIN SLIDER -->
     <div class="page-slider margin-bottom-40">
-        <div id="carousel-example-generic" class="carousel slide carousel-slider"  data-ride="carousel" data-interval="5000">
+        <div id="carousel-example-generic" class="carousel slide carousel-slider">
             <!-- Indicators -->
             <ol class="carousel-indicators carousel-indicators-frontend">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -25,27 +25,22 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
                                 Expore the power <br/>
                                 <span class="carousel-title-normal">of Metronic</span>
                             </h2>
-                            <p class="carousel-subtitle-v5 border-top-bottom margin-bottom-30" data-animation="animated fadeInDown">This is what you were looking for</p>
-                            <a class="carousel-btn-green" href="#" data-animation="animated fadeInUp">Purchase Now!</a>
+                            <!-- <p class="carousel-subtitle-v5 border-top-bottom margin-bottom-30" data-animation="animated fadeInDown">This is what you were looking for</p>
+                            <a class="carousel-btn-green" href="#" data-animation="animated fadeInUp">Purchase Now!</a> -->
                         </div>
                     </div>
                 </div>
+
+                
                 
                 <!-- Second slide -->
                 <div class="item carousel-item-nine">
                     <div class="container">
                         <div class="carousel-position-six">
-                            <h2 class="animate-delay carousel-title-v6 text-uppercase" data-animation="animated fadeInDown">
-                                Need a website design?
+                            <h2 class="margin-bottom-20 animate-delay carousel-title-v5" data-animation="animated fadeInDown">
+                                Expore the power <br/>
+                                <span class="carousel-title-normal">of Metronic</span>
                             </h2>
-                            <p class="carousel-subtitle-v6 text-uppercase" data-animation="animated fadeInDown">
-                                This is what you were looking for
-                            </p>
-                            <p class="carousel-subtitle-v7 margin-bottom-30" data-animation="animated fadeInDown">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                                Sed est nunc, sagittis at consectetur id.
-                            </p>
-                            <a class="carousel-btn-green" href="#" data-animation="animated fadeInUp">Purchase Now!</a>
                         </div>
                     </div>
                 </div>
@@ -54,20 +49,29 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
                 <div class="item carousel-item-ten">
                     <div class="container">
                         <div class="carousel-position-six">
-                            <h2 class="animate-delay carousel-title-v6 text-uppercase" data-animation="animated fadeInDown">
-                                Powerful &amp; Clean
+                            <h2 class="margin-bottom-20 animate-delay carousel-title-v5" data-animation="animated fadeInDown">
+                                Expore the power <br/>
+                                <span class="carousel-title-normal">of Metronic</span>
                             </h2>
-                            <p class="carousel-subtitle-v6 text-uppercase" data-animation="animated fadeInDown">
-                                Responsive Website &amp; Admin Theme
-                            </p>
-                            <p class="carousel-subtitle-v7 margin-bottom-30" data-animation="animated fadeInDown">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-                                Sed est nunc, sagittis at consectetur id.
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+
+                <form class="col-sm-12 pull-right" id="searchForm" action="<?php echo base_url('frontend/main/listing');?>" style="margin-top: -347px;margin-left: -339px ;">
+                    <div class="form-group col-sm-4 col-sm-offset-4">
+                          <input type="text" class="form-control" placeholder="Dari" style="background: rgba(255,255,255,0.8);">
+                      </div>
+                      <div class="form-group col-sm-4 col-sm-offset-4">
+                        
+                          <input type="text" class="form-control" placeholder="Ke" style="background: rgba(255,255,255,0.8);">
+                      </div>
+                      <div class="form-group col-sm-4 col-sm-offset-4">
+                          <button type="submit" class="btn btn-primary mb-2">Cari</button>
+                        </div>
+                    </div>
+                    
+                </form>
 
             <!-- Controls -->
             <a class="left carousel-control carousel-control-shop carousel-control-frontend" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -81,7 +85,9 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
     <!-- END SLIDER -->
 <div class="main">
       <div class="container">
-        <!-- BEGIN SERVICE BOX -->   
+        
+      
+         <!-- BEGIN SERVICE BOX -->   
         <div class="row service-box margin-bottom-40">
           <div class="col-md-4 col-sm-4">
             <div class="service-box-heading">
@@ -117,7 +123,6 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
           </div>
         </div>
         <!-- END BLOCKQUOTE BLOCK -->
-
         <!-- BEGIN RECENT WORKS -->
         <div class="row recent-work margin-bottom-40">
           <div class="col-md-3">
