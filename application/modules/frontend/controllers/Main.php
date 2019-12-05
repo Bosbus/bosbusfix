@@ -46,6 +46,13 @@ class Main extends CI_Controller
         $this->load->view('template_front', $this->data);
     }
 
+    public function detail()
+    {
+        $this->data['page_title'] = 'List';
+        $this->data['main_view'] = 'content/listing';
+        $this->load->view('template_front', $this->data);
+    }
+
     public function act_add()
     {
 

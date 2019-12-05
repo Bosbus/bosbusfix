@@ -44,6 +44,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
   <!-- Global styles START -->          
   <link href="<?php echo base_url() ; ?>assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="<?php echo base_url() ; ?>assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php echo base_url() ; ?>assets/plugins/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
   <!-- Global styles END --> 
    
   <!-- Page level plugin styles START -->
@@ -88,6 +89,7 @@ $this->load->view('part_frontend/header');
     <script src="<?php echo base_url(); ?>assets/plugins/jquery.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url(); ?>assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
     <script src="<?php echo base_url(); ?>assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="<?php echo base_url(); ?>assets/plugins/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.js" type="text/javascript"></script>      
     <script src="<?php echo base_url(); ?>assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
 
@@ -102,8 +104,15 @@ $this->load->view('part_frontend/header');
             Layout.init();    
             Layout.initOWL();
             Layout.initTwitter();
-            //Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
-            //Layout.initNavScrolling(); 
+            Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+            Layout.initNavScrolling(); 
+
+            var defaultDate = new Date(); // = today
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                startDate: defaultDate,
+                autoclose: true,
+            });
         });
     </script>
     <!-- END PAGE LEVEL JAVASCRIPTS -->
