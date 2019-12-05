@@ -9,6 +9,16 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 <div class="main">
     <div class="container">
     	<!-- LISTING -->
+        <!-- BEGIN BLOCKQUOTE BLOCK -->   
+        <div class="row quote-v1 margin-bottom-30">
+          <div class="col-md-9">
+            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing tempor &amp; Popular Admin &amp; Frontend Theme</span>
+          </div>
+          <div class="col-md-3 text-right">
+            
+          </div>
+        </div>
+        <!-- END BLOCKQUOTE BLOCK -->
         <div class="row">
 
           <div class="col-lg-4 col-md-6 mb-4">
